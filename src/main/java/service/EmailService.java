@@ -18,9 +18,9 @@ public class EmailService {
     public void sendSimpleEmail(String from, String subject, String text, String emailBccList) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo("cs@octopus-tech.com");
-        message.setFrom(from);
+        message.setFrom("cs@octopus-tech.com");
         message.setSubject(subject);
-        message.setText(text);
+        message.setText("from sender: " + from + "\n" + text);
         message.setBcc(emailBccList);
         mailSender.send(message);
     }
