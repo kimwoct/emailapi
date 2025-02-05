@@ -17,7 +17,7 @@ public class EmailService {
 
     public void sendSimpleEmail(String from, String subject, String text, String emailBccList) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo("noreply.lingto@gmail.com");
+        message.setTo("cs@octopus-tech.com");
         message.setFrom(from);
         message.setSubject(subject);
         message.setText(text);

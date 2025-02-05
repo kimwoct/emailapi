@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import static config.EmailConfig.emailBccList;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5501") // Replace with your client's origin
+@CrossOrigin(origins = "http://127.0.0.1:5501") // fixme: Replace with your client's origin
 public class EmailController {
     private final EmailService emailService;
 
